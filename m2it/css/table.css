@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 태블릿 */
+@media (min-width:768px) {
+    /**** text h2 *****/
+    .box h2 { font-size: 31px; }
+
+    /******* header *******/
+    .container header { height: 80px; }
+    .container header #toggle_menu {
+        margin: 5px 5vw 0 0;
+    }
+
+    /******* main *******/
+
+    /***** mainVisualImg *****/
+    .container main .mainVisualImg {
+        height: 60vh;
+    }
+    .container main .mainVisualImg .box1 h2 {
+        font-size: 4rem;
+        margin-top: 16%;
+    }
+    .container main .mainVisualImg .box1 p {
+        font-size: 20px;
+        margin: 0 50px;
+    }
+
+    /***** in_about *****/
+    .container main .in_about { margin: 25px 0;}
+    .container main .bg1 .box > p { font-size: 18px; }
+    .container main .in_about .ico img { width: 108px; }
+    .container main .in_about .ico h3 { margin-top: 10px; font-size: 19px; }
+    .container main .in_about .ico p { margin: 5px 0 30px; font-size: 18px; }
+
+    /***** in_service *****/
+    .container main .box3 { text-align: center;  margin: 0 6.2% 130px; }
+    .container main .box3 > p { font-size: 18px;}
+    .container main .box3 .in_service .sv { margin: 25px 0; height: 28vw; } 
+    .container main .box3 .in_service .sv .txt h3 { font-size: 28px; margin-bottom: 10px; }
+    .container main .box3 .in_service .sv .txt p { font-size: 23px; }
+
+    /****** in_news ******/
+    .container main .bg2 .box4 { padding-bottom: 80px; }
+    .container main .box4 p { font-size: 18px; }
+    .container main .box4 .in_news {
+        display: flex;
+        justify-content: center;
+    }
+    .container main .box4 .in_news .cont { margin: 0 10px 60px; width: 28vw; }
+    .container main .box4 .in_news img { height: 21vw; }
+
+    .container main .box4 { position: relative; }
+    .container main .box4 .m_icon { position: absolute; top: 175px; right: 5px; padding: 0 5vw 0 0; }
+    .container main .box4 .in_news h3 { font-size: 17px; }
+    .container main .box4 .in_news p { font-size: 16px; }
+    
+    /****** in_notice ******/
+    .container main .box5 { margin-top: 130px; position: relative; }
+    .container main .box5 .in_notice li {
+        margin-left: 30%;
+    }
+    .container main .box5 .in_notice li a { font-size: 18px; }
+    .container main .box5 .in_notice li span { right: 6%; font-size: 16px; }
+    .container main .box5 h2 { 
+        position: absolute;
+        left: 60px; top: 0;
+        padding: 0; margin: 0;
+    }
+
+    .container main .box5 .m_icon { 
+        position: absolute;
+        left: 25px; top: 50px;
+    }
+
+    /****** 무엇이든 물어보세요 ******/
+    .container main .box6 { height: 337px; }
+    .container main .box6 h2 { font-size: 43px; padding-top: 96px; }
+    .container main .box6 h3 { font-size: 17px; margin-bottom: 20px; }
+    .container main .box6 .btn1, .container main .box6 .btn2 { font-size: 15px; width: 80px; }
+
+    /****** footer ******/
+    footer {
+        height: 170px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer p { padding: 30px; }
+    footer a { font-size: 15px; margin-right: 30px; } 
+}
