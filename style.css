@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+body { font-family:  'Pretendard', Arial, Helvetica, sans-serif; color: #111111;
+    /* cursor: url(./images/cursor.png),auto; } */
+}
+
+a { color:inherit }
+
+/* header */
+
+/***** nav *****/
+nav {
+    position: fixed;
+    
+    width: 100%; height: 140px;
+    /* background-color: ghostwhite; */
+    /* transition: .3s; */
+
+    z-index: 1;
+}
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 100px 0;
+}
+nav #menu { font-size: 23px; font-weight: bold; }
+nav #menu li { margin: 0 30px; line-height: 90px; }
+
+.header_section { height: 100vh; }
+.header_section .size {
+    padding: 200px 130px 83px;
+    height: 100%;
+}
+
+/* WELLCOM TO MY PORTFOLIO */
+h1 {
+    font-size: 110px; font-weight: bold;
+    line-height: 120px;
+} 
+.header_section .txt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 270px;
+    font-weight: bold;
+}
+.header_section .txt p {
+    font-size: 21px; line-height: 29px;
+}
+.header_section .txt span {
+    font-size: 60px; line-height: 150px; 
+}
+.header_section .bar {
+    width: 100%;
+    border: 8px solid black;
+    background-color: black;
+}
+
+
+/* main */
+
+/***** work *****/
+h3 { font-size: 48px; font-weight: 500; }
+.part { padding: 208px 130px 85px; }
+.sm_bar { 
+    margin-top: 10px;
+    border: 1.5px solid black;
+    background-color: black;
+}
+.project_section { padding: 0 130px 100px; }
+
+.project_container {
+    display: flex;
+    justify-content: space-between;
+    height: 580px;
+}
+.project_content {
+    padding: 110px 0 0 70px;
+    font-weight: bold;
+    position: relative;
+}
+.project_content h2 {
+    padding: 36px 0 3px;
+    font-size: 4.1rem;
+    font-weight: bold;
+}
+.project_content p { font-size: 22px; }
+.project_content .txt { padding-bottom: 167px; font-size: 23px; font-weight: 500; }
+.project_content .keyword { padding-bottom: 38px; line-height: 1.5; }
+.project_content .keyword span { 
+    font-size: 20px; font-weight: 700;
+    margin-right: 20px; 
+}
+.project_content .project_link { 
+    position: absolute; 
+    bottom: 0; 
+    color: #666666;
+    font-weight: 500;
+    font-size: 23px;
+}
+.project_content .project_link img {
+    vertical-align: baseline;
+    margin-left: 20px;
+}
+.md_bar { 
+    border: 1px solid #CCCCCC;
+    margin: 85px 0;
+}
+
+.project_graphics { display: flex; position: relative;  }
+.project_graphics .mobile_app {
+    width: 275px; height: 100%;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: 25px;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.68);
+    cursor: pointer;
+}
+.project_graphics .web {
+    width: 750px; height: 100%;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-right: 90px;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.68);
+    background-size: cover; 
+    transition: background-position 3s ease;
+    cursor: pointer;
+}
+.project_graphics .mobile_web {
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 230px; height: 80%;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.68);
+    transition: background-position 4.5s ease;
+    cursor: pointer;
+}
+.project_graphics:hover .web,
+.project_graphics:hover .mobile_web {
+    background-position: 0 100%;
+}
+
+/* 이미지
+.project_graphics .cu { position: absolute; left: -80px; bottom: 0; height: 75%; } */
+
+/* CU POST img */
+.project_graphics .m-home {
+    background: url(./images/home.png);
+    background-size: cover;
+}
+.project_graphics .m-order {
+    background: url(./images/order.png);
+    background-size: cover;
+}
+.project_graphics .m-branch {
+    background: url(./images/branch.png);
+    background-size: cover;
+}
+
+/* M2IT img */
+.project_graphics .w-m2it_img {
+    background: url(./images/m2it_web.png);
+    background-size: cover;
+}
+.project_graphics .m-m2it_img {
+    background: url(./images/m2it_mobile.png);
+    background-size: cover;
+}
+
+/* MIDAS IT img */
+.project_graphics .w-midas_img {
+    background: url(./images/midas_web.png);
+    background-size: cover;
+}
+
+
+/***** skills & tools *****/
+.skills_section { background-color: black; color: white; }
+.skills_section .sm_bar { 
+    border: 1.5px solid white; 
+    background-color: white; 
+    margin-bottom: 50px; 
+}
+.skills_content { 
+    height: 200px; 
+    display: flex;
+    padding: 0 220px;
+}
+.skills_content .skills_name { 
+    font-size: 2.5rem; 
+    margin-bottom: 40px; 
+    width: 40%; height: 20%;
+    margin-left: 50px;
+}
+.skills_content .txt { margin-left: 150px; }
+.skills_content .txt p { 
+    font-size: 22px; 
+    margin-bottom: 13px; 
+}
+.skills_container .md_bar { 
+    width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 85px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/***** contact *****/
+.contact_section { background-color: black; color: white; }
+.contact_section .part { padding-top: 0; padding-bottom: 50px; }
+.contact_section h3 { padding-top: 180px; }
+.contact_section .sm_bar { 
+    border-color: white; 
+    background-color: white; 
+    margin-bottom: 50px; }
+
+.contact_container { padding: 0 200px; }
+.contact_container .my_name { font-size: 30px; }
+.contact_container .my_name span { font-size: 22px; }
+.contact_container .my_email { font-size: 50px; margin: 13px 0 70px; }
+
+.contact_container .flax h5 { font-size: 30px; margin-bottom: 20px; }
+.contact_container .flax .box1 p { font-size: 18px; line-height: 1.5; margin-bottom: 40px; }
+
+.flax { 
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+}
+.flax .box2 { 
+    position: absolute;
+    right: 0; bottom: -50px;
+}
+.flax .box2 p { font-size: 26px; line-height: 1.5; }
+
+/***** footer *****/
+footer { 
+    background-color: black; color: #999999;
+    padding: 200px 130px 120px;
+    font-size: 18px;
+}
